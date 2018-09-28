@@ -35,18 +35,18 @@ a:hover {
 
 /* FLICKITY STYLES */
 .gallery {
-  background: #EEE;
+  background: #eee;
 }
 
 .carousel {
-  background: #EEE;
-  color: #EEE;
+  background: #eee;
+  color: #eee;
 }
 
 .carousel img {
   display: block;
-  height: auto;
-  width: 100%;
+  height: 95vh;
+  /* width: 100%; */
 }
 
 .gallery-cell {
@@ -73,7 +73,7 @@ a:hover {
 /* Header Styles */
 
 #logo {
-  background-image: url("../images/jshnide_logo.png");
+  background-image: url('../images/jshnide_logo.png');
   background-size: cover;
   width: 120px;
   height: 120px;
@@ -89,7 +89,6 @@ a:hover {
     width: 60px;
 
   }*/
-
 }
 
 #logo:hover {
@@ -101,9 +100,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0,0,0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   -webkit-transition: background-color 1s; /* Safari */
-  transition: background-color .6s;
+  transition: background-color 0.6s;
   margin-top: -10px;
   padding: 0 20px;
   margin-bottom: 5px;
@@ -112,7 +111,7 @@ header {
 }
 
 header:hover {
-  background-color: rgba(0,0,0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 header div {
@@ -120,9 +119,8 @@ header div {
   margin-bottom: -17px;
 }
 
-
 header div h2 {
-  font-size: .95em;
+  font-size: 0.95em;
   position: relative;
   top: -25px;
   left: -14px;
@@ -135,7 +133,7 @@ header ul {
 header ul li {
   margin: 0 10px;
   font-size: 2.3em;
-  opacity: .7;
+  opacity: 0.7;
 }
 header ul li:hover {
   cursor: pointer;
@@ -146,7 +144,14 @@ header nav {
   display: flex;
 }
 
-#homePage, #musicPage, #aboutPage, #musicPage, #clientsPage, #teachingPage, #subscribePage, #videosPage {
+#homePage,
+#musicPage,
+#aboutPage,
+#musicPage,
+#clientsPage,
+#teachingPage,
+#subscribePage,
+#videosPage {
   opacity: 1 !important;
 }
 
@@ -159,20 +164,22 @@ header nav li a:active {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 800px) {
-  #music, #clients, #videos {
+  #music,
+  #clients,
+  #videos {
     margin-right: -6%;
   }
   header {
     padding: 10px 50px;
     flex-direction: column;
-     height: 200px; 
+    height: 200px;
   }
   header .social-media li a {
-    font-size: .7em;
+    font-size: 0.7em;
   }
   header nav li {
     margin: 0 3px;
-    font-size: .8em;
+    font-size: 0.8em;
   }
 }
 
@@ -196,13 +203,10 @@ header nav li a:active {
   text-align: center;
 }
 
-
-
 @media (max-width: 667px) {
   .hero .background-image {
     background-position: 50% 100%;
   }
-
 }
 
 /*  media-2 styles*/
@@ -213,7 +217,6 @@ section.media-2 {
   margin-top: 30px;
 }
 
-
 @media (max-width: 1024px) {
   section.media-2 {
     /* height: 100vh; */
@@ -221,12 +224,14 @@ section.media-2 {
     justify-content: space-around;
     align-items: center;
   }
-  section.media-2 div.spotify, section.media-2 div.youtube {
+  section.media-2 div.spotify,
+  section.media-2 div.youtube {
     margin: 0px !important;
   }
 }
 
-section.media-2 div.spotify, section.media-2 div.youtube{
+section.media-2 div.spotify,
+section.media-2 div.youtube {
   margin-top: 10px;
   width: 500px;
   min-width: 400px;
@@ -234,13 +239,13 @@ section.media-2 div.spotify, section.media-2 div.youtube{
 }
 
 @media (max-width: 800px) {
-  section.media-2 div.spotify, section.media-2 div.youtube {
+  section.media-2 div.spotify,
+  section.media-2 div.youtube {
     width: 100%;
     height: 330px;
     margin-top: 0;
   }
 }
-
 
 /* ABOUT SECTION STYLES */
 section.about-section {
@@ -268,13 +273,11 @@ section.about-clients {
   margin-top: 50px;
 }
 
-
 @media (max-width: 800px) {
   section.about-clients {
     line-height: 1.5em;
   }
 }
-
 
 /* SUBSCRIBE SECTION */
 section.subscribe {
@@ -292,7 +295,6 @@ section.subscribe h2 {
   text-align: center;
 }
 section.subscribe form {
-
   flex-direction: column;
   margin: 0 auto;
 }
@@ -323,7 +325,7 @@ label {
   font-size: 110%;
 }
 
-input[type=submit] {
+input[type='submit'] {
   font-size: 2em;
 }
 
@@ -353,7 +355,7 @@ footer ul {
 footer ul li {
   margin: 0 20px;
   font-size: 3em;
-  opacity: .7;
+  opacity: 0.7;
 }
 footer ul li:hover {
   cursor: pointer;
